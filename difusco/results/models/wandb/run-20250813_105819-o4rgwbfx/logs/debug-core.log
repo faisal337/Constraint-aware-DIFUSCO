@@ -1,0 +1,8 @@
+{"time":"2025-08-13T10:58:20.2705599+01:00","level":"INFO","msg":"main: starting server","port-filename":"C:\\Users\\faiso\\AppData\\Local\\Temp\\tmpaz1_mbey\\port-2380.txt","pid":2380,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-08-13T10:58:20.2763636+01:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":2380}
+{"time":"2025-08-13T10:58:20.2763636+01:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"C:\\Users\\faiso\\AppData\\Local\\Temp\\wandb-2380-5040-2416700106\\socket","Net":"unix"}}
+{"time":"2025-08-13T10:58:20.2763636+01:00","level":"INFO","msg":"server: accepting connections","addr":{"IP":"127.0.0.1","Port":54507,"Zone":""}}
+{"time":"2025-08-13T10:58:20.4784969+01:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(127.0.0.1:54508)"}
+{"time":"2025-08-13T10:58:20.5552773+01:00","level":"INFO","msg":"handleInformInit: received","streamId":"o4rgwbfx","id":"1(127.0.0.1:54508)"}
+{"time":"2025-08-13T10:58:20.9331542+01:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"o4rgwbfx","id":"1(127.0.0.1:54508)"}
+{"time":"2025-08-13T11:09:36.5224896+01:00","level":"INFO","msg":"server: parent process exited, terminating service process"}

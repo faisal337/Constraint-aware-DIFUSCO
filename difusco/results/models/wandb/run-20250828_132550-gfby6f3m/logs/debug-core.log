@@ -1,0 +1,8 @@
+{"time":"2025-08-28T13:25:50.8092954+01:00","level":"INFO","msg":"main: starting server","port-filename":"C:\\Users\\faiso\\AppData\\Local\\Temp\\tmpv68ipmy2\\port-28036.txt","pid":28036,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-08-28T13:25:50.8124951+01:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":28036}
+{"time":"2025-08-28T13:25:50.8124951+01:00","level":"INFO","msg":"server: accepting connections","addr":{"IP":"127.0.0.1","Port":62984,"Zone":""}}
+{"time":"2025-08-28T13:25:50.8124951+01:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"C:\\Users\\faiso\\AppData\\Local\\Temp\\wandb-28036-13092-2229129989\\socket","Net":"unix"}}
+{"time":"2025-08-28T13:25:50.9394178+01:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(127.0.0.1:62985)"}
+{"time":"2025-08-28T13:25:50.9874571+01:00","level":"INFO","msg":"handleInformInit: received","streamId":"gfby6f3m","id":"1(127.0.0.1:62985)"}
+{"time":"2025-08-28T13:25:51.5298391+01:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"gfby6f3m","id":"1(127.0.0.1:62985)"}
+{"time":"2025-08-28T13:30:00.9274809+01:00","level":"INFO","msg":"server: parent process exited, terminating service process"}

@@ -1,0 +1,14 @@
+{"time":"2025-08-08T17:26:53.1383659+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-08-08T17:26:53.5363368+01:00","level":"INFO","msg":"stream: created new stream","id":"4oiztciq"}
+{"time":"2025-08-08T17:26:53.5363368+01:00","level":"INFO","msg":"stream: started","id":"4oiztciq"}
+{"time":"2025-08-08T17:26:53.5363368+01:00","level":"INFO","msg":"writer: Do: started","stream_id":"4oiztciq"}
+{"time":"2025-08-08T17:26:53.5363368+01:00","level":"INFO","msg":"handler: started","stream_id":"4oiztciq"}
+{"time":"2025-08-08T17:26:53.5363368+01:00","level":"INFO","msg":"sender: started","stream_id":"4oiztciq"}
+{"time":"2025-08-08T17:26:55.2901997+01:00","level":"INFO","msg":"stream: closing","id":"4oiztciq"}
+{"time":"2025-08-08T17:26:55.4725249+01:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-08-08T17:26:55.4730491+01:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project /dil not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-08-08T17:26:55.4737902+01:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-08-08T17:26:55.4737902+01:00","level":"INFO","msg":"handler: closed","stream_id":"4oiztciq"}
+{"time":"2025-08-08T17:26:55.4737902+01:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4oiztciq"}
+{"time":"2025-08-08T17:26:55.4737902+01:00","level":"INFO","msg":"sender: closed","stream_id":"4oiztciq"}
+{"time":"2025-08-08T17:26:55.4743375+01:00","level":"INFO","msg":"stream: closed","id":"4oiztciq"}

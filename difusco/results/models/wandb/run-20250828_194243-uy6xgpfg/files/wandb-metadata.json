@@ -1,0 +1,42 @@
+{
+  "os":  "Windows-11-10.0.26100-SP0",
+  "python":  "CPython 3.12.6",
+  "startedAt":  "2025-08-28T18:42:43.219194Z",
+  "args":  [
+    "--task",
+    "tsp",
+    "--storage_path",
+    "results",
+    "--do_train",
+    "--project_name",
+    "local",
+    "--batch_size",
+    "8",
+    "--validation_examples",
+    "64",
+    "--diffusion_steps",
+    "10",
+    "--learning_rate",
+    "2e-4",
+    "--use_constraints"
+  ],
+  "program":  "D:\\COMP702\\DIFUSCO-main\\difusco\\train.py",
+  "codePath":  "train.py",
+  "codePathLocal":  "train.py",
+  "email":  "mohammed.faisal337@gmail.com",
+  "root":  "results\\models",
+  "host":  "Starlabs",
+  "executable":  "C:\\Users\\faiso\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "cpu_count":  10,
+  "cpu_count_logical":  12,
+  "disk":  {
+    "/":  {
+      "total":  "322121494528",
+      "used":  "291098947584"
+    }
+  },
+  "memory":  {
+    "total":  "16847933440"
+  },
+  "writerId":  "xnuqvjdh37u2p1li46xz7rpgl6sq9po0"
+}

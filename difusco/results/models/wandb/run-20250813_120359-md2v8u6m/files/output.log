@@ -1,0 +1,45 @@
+Parameters: 5333505
+C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Traceback (most recent call last):
+  File "D:\COMP702\DIFUSCO-main\difusco\train.py", line 150, in <module>
+    main(args)
+  File "D:\COMP702\DIFUSCO-main\difusco\train.py", line 136, in main
+    trainer.fit(model, ckpt_path=ckpt_path)
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 561, in fit
+    call._call_and_handle_interrupt(
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\call.py", line 48, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 599, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 988, in _run
+    self.strategy.setup(self)
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\strategies\strategy.py", line 159, in setup
+    self.setup_optimizers(trainer)
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\strategies\strategy.py", line 139, in setup_optimizers
+    self.optimizers, self.lr_scheduler_configs = _init_optimizers_and_lr_schedulers(self.lightning_module)
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\core\optimizer.py", line 180, in _init_optimizers_and_lr_schedulers
+    optim_conf = call._call_lightning_module_hook(model.trainer, "configure_optimizers", pl_module=model)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\call.py", line 176, in _call_lightning_module_hook
+    output = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "D:\COMP702\DIFUSCO-main\difusco\pl_meta_model.py", line 83, in configure_optimizers
+    rank_zero_info('Training steps: %d' % self.get_total_num_training_steps())
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\COMP702\DIFUSCO-main\difusco\pl_meta_model.py", line 66, in get_total_num_training_steps
+    dataset = self.train_dataloader()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\COMP702\DIFUSCO-main\difusco\pl_meta_model.py", line 188, in train_dataloader
+    train_dataloader = GraphDataLoader(
+                       ^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch_geometric\deprecation.py", line 27, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch_geometric\loader\dataloader.py", line 87, in __init__
+    super().__init__(
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 280, in __init__
+    raise ValueError("persistent_workers option needs num_workers > 0")
+ValueError: persistent_workers option needs num_workers > 0

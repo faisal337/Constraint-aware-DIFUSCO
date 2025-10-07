@@ -1,0 +1,7 @@
+{"time":"2025-08-19T20:12:04.4291582+01:00","level":"INFO","msg":"main: starting server","port-filename":"C:\\Users\\faiso\\AppData\\Local\\Temp\\tmpgxm0j981\\port-13364.txt","pid":13364,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-08-19T20:12:04.4585763+01:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":13364}
+{"time":"2025-08-19T20:12:04.4585763+01:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"C:\\Users\\faiso\\AppData\\Local\\Temp\\wandb-13364-10284-3670101953\\socket","Net":"unix"}}
+{"time":"2025-08-19T20:12:04.4594895+01:00","level":"INFO","msg":"server: accepting connections","addr":{"IP":"127.0.0.1","Port":56381,"Zone":""}}
+{"time":"2025-08-19T20:12:04.5922632+01:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(127.0.0.1:56382)"}
+{"time":"2025-08-19T20:12:04.7199592+01:00","level":"INFO","msg":"handleInformInit: received","streamId":"id7k1wy3","id":"1(127.0.0.1:56382)"}
+{"time":"2025-08-19T20:12:05.6427626+01:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"id7k1wy3","id":"1(127.0.0.1:56382)"}

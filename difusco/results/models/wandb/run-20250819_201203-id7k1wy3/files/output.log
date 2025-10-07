@@ -1,0 +1,17 @@
+Parameters: 5333505
+C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Training steps: 9387500
+
+  | Name  | Type       | Params | Mode
+---------------------------------------------
+0 | model | GNNEncoder | 5.3 M  | train
+---------------------------------------------
+5.3 M     Trainable params
+0         Non-trainable params
+5.3 M     Total params
+21.334    Total estimated model params size (MB)
+196       Modules in train mode
+0         Modules in eval mode
+Sanity Checking: |                                                                                                                  | 0/? [00:00<?, ?it/s]Validation dataset size: 64
+Sanity Checking DataLoader 0:   0%|                                                                                                 | 0/2 [00:00<?, ?it/s]

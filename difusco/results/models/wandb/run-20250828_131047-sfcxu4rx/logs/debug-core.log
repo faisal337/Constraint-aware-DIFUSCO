@@ -1,0 +1,8 @@
+{"time":"2025-08-28T13:10:48.1622149+01:00","level":"INFO","msg":"main: starting server","port-filename":"C:\\Users\\faiso\\AppData\\Local\\Temp\\tmp2938nfma\\port-1712.txt","pid":1712,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-08-28T13:10:48.165407+01:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":1712}
+{"time":"2025-08-28T13:10:48.165407+01:00","level":"INFO","msg":"server: accepting connections","addr":{"IP":"127.0.0.1","Port":57303,"Zone":""}}
+{"time":"2025-08-28T13:10:48.165407+01:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"C:\\Users\\faiso\\AppData\\Local\\Temp\\wandb-1712-328-3754495630\\socket","Net":"unix"}}
+{"time":"2025-08-28T13:10:48.2986039+01:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(127.0.0.1:57304)"}
+{"time":"2025-08-28T13:10:48.3351429+01:00","level":"INFO","msg":"handleInformInit: received","streamId":"sfcxu4rx","id":"1(127.0.0.1:57304)"}
+{"time":"2025-08-28T13:10:48.7320937+01:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"sfcxu4rx","id":"1(127.0.0.1:57304)"}
+{"time":"2025-08-28T13:13:05.8670571+01:00","level":"INFO","msg":"server: parent process exited, terminating service process"}

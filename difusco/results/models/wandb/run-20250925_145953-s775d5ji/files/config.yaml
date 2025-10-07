@@ -1,0 +1,79 @@
+_wandb:
+    value:
+        cli_version: 0.21.1
+        e:
+            kfsqo6asfk8fszo5wb7exw76o9v0lrpc:
+                args:
+                    - --task
+                    - tsp
+                    - --storage_path
+                    - results
+                    - --do_train
+                    - --project_name
+                    - local
+                    - --batch_size
+                    - "8"
+                    - --validation_examples
+                    - "64"
+                    - --diffusion_steps
+                    - "10"
+                    - --learning_rate
+                    - "2e-4"
+                    - --use_constraints
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 10
+                cpu_count_logical: 12
+                disk:
+                    /:
+                        total: "322121494528"
+                        used: "305187356672"
+                email: mohammed.faisal337@gmail.com
+                executable: C:\Users\faiso\AppData\Local\Programs\Python\Python312\python.exe
+                host: Starlabs
+                memory:
+                    total: "16847933440"
+                os: Windows-11-10.0.26100-SP0
+                program: D:\COMP702\DIFUSCO-main\difusco\train.py
+                python: CPython 3.12.6
+                root: results\models
+                startedAt: "2025-09-25T13:59:53.312839Z"
+                writerId: kfsqo6asfk8fszo5wb7exw76o9v0lrpc
+        m:
+            - "1": trainer/global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "5": 1
+              "6":
+                - 1
+              "7": []
+        python_version: 3.12.6
+        t:
+            "1":
+                - 1
+                - 5
+                - 9
+                - 41
+                - 53
+                - 77
+                - 103
+            "2":
+                - 1
+                - 5
+                - 9
+                - 41
+                - 53
+                - 77
+                - 103
+            "3":
+                - 7
+                - 14
+                - 66
+            "4": 3.12.6
+            "5": 0.21.1
+            "8":
+                - 3
+            "12": 0.21.1
+            "13": windows-amd64

@@ -1,0 +1,12 @@
+{"time":"2025-08-13T00:49:12.0975285+01:00","level":"INFO","msg":"stream: starting","core version":"0.21.1"}
+{"time":"2025-08-13T00:49:13.4001764+01:00","level":"INFO","msg":"stream: created new stream","id":"hor7rpax"}
+{"time":"2025-08-13T00:49:13.4007378+01:00","level":"INFO","msg":"stream: started","id":"hor7rpax"}
+{"time":"2025-08-13T00:49:13.4007378+01:00","level":"INFO","msg":"handler: started","stream_id":"hor7rpax"}
+{"time":"2025-08-13T00:49:13.4007378+01:00","level":"INFO","msg":"writer: started","stream_id":"hor7rpax"}
+{"time":"2025-08-13T00:49:13.4007378+01:00","level":"INFO","msg":"sender: started","stream_id":"hor7rpax"}
+{"time":"2025-08-13T10:05:03.6981262+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-13T10:05:03.7113063+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mohammed-faisal337-university-of-liverpool/dil/hor7rpax/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-13T10:05:05.8733686+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mohammed-faisal337-university-of-liverpool/dil/hor7rpax/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-13T10:05:06.0182443+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-13T10:05:10.3409981+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/mohammed-faisal337-university-of-liverpool/dil/hor7rpax/file_stream\": dial tcp: lookup api.wandb.ai: no such host"}
+{"time":"2025-08-13T10:05:10.7508079+01:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": dial tcp: lookup api.wandb.ai: no such host"}

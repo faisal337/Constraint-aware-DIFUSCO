@@ -1,0 +1,154 @@
+Parameters: 5333505
+C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+Training steps: 160
+
+  | Name  | Type       | Params | Mode
+---------------------------------------------
+0 | model | GNNEncoder | 5.3 M  | train
+---------------------------------------------
+5.3 M     Trainable params
+0         Non-trainable params
+5.3 M     Total params
+21.334    Total estimated model params size (MB)
+196       Modules in train mode
+0         Modules in eval mode
+Sanity Checking: |                                                                                                                 | 0/? [00:00<?, ?it/s]Validation dataset size: 64
+Sanity Checking DataLoader 0:   0%|                                                                                                | 0/2 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "D:\COMP702\DIFUSCO-main\difusco\train.py", line 155, in <module>
+    main(args)
+  File "D:\COMP702\DIFUSCO-main\difusco\train.py", line 140, in main
+    trainer.fit(model, ckpt_path=ckpt_path)
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 561, in fit
+    call._call_and_handle_interrupt(
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\call.py", line 47, in _call_and_handle_interrupt
+    return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\strategies\launchers\subprocess_script.py", line 105, in launch
+    return function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 599, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1012, in _run
+    results = self._run_stage()
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1054, in _run_stage
+    self._run_sanity_check()
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1083, in _run_sanity_check
+    val_loop.run()
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\loops\utilities.py", line 179, in _decorator
+    return loop_run(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\loops\evaluation_loop.py", line 138, in run
+    batch, batch_idx, dataloader_idx = next(data_fetcher)
+                                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\loops\fetchers.py", line 134, in __next__
+    batch = super().__next__()
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\loops\fetchers.py", line 61, in __next__
+    batch = next(self.iterator)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\utilities\combined_loader.py", line 341, in __next__
+    out = next(self._iterator)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\utilities\combined_loader.py", line 142, in __next__
+    out = next(self.iterators[0])
+          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 708, in __next__
+    data = self._next_data()
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1480, in _next_data
+    return self._process_data(data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1505, in _process_data
+    data.reraise()
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_utils.py", line 733, in reraise
+    raise exception
+ValueError: Caught ValueError in DataLoader worker process 1.
+Original Traceback (most recent call last):
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\worker.py", line 349, in _worker_loop
+    data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 50, in fetch
+    data = self.dataset.__getitems__(possibly_batched_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataset.py", line 420, in __getitems__
+    return [self.dataset[self.indices[idx]] for idx in indices]
+            ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "D:\COMP702\DIFUSCO-main\difusco\co_datasets\tsp_graph_dataset.py", line 41, in __getitem__
+    points, tour = self.get_example(idx)
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\COMP702\DIFUSCO-main\difusco\co_datasets\tsp_graph_dataset.py", line 31, in get_example
+    points = np.array([[float(points[i]), float(points[i + 1])] for i in range(0, len(points), 2)])
+                        ^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: ''
+
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "D:\COMP702\DIFUSCO-main\difusco\train.py", line 155, in <module>
+[rank0]:     main(args)
+[rank0]:   File "D:\COMP702\DIFUSCO-main\difusco\train.py", line 140, in main
+[rank0]:     trainer.fit(model, ckpt_path=ckpt_path)
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 561, in fit
+[rank0]:     call._call_and_handle_interrupt(
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\call.py", line 47, in _call_and_handle_interrupt
+[rank0]:     return trainer.strategy.launcher.launch(trainer_fn, *args, trainer=trainer, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\strategies\launchers\subprocess_script.py", line 105, in launch
+[rank0]:     return function(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 599, in _fit_impl
+[rank0]:     self._run(model, ckpt_path=ckpt_path)
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1012, in _run
+[rank0]:     results = self._run_stage()
+[rank0]:               ^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1054, in _run_stage
+[rank0]:     self._run_sanity_check()
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1083, in _run_sanity_check
+[rank0]:     val_loop.run()
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\loops\utilities.py", line 179, in _decorator
+[rank0]:     return loop_run(self, *args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\loops\evaluation_loop.py", line 138, in run
+[rank0]:     batch, batch_idx, dataloader_idx = next(data_fetcher)
+[rank0]:                                        ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\loops\fetchers.py", line 134, in __next__
+[rank0]:     batch = super().__next__()
+[rank0]:             ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\loops\fetchers.py", line 61, in __next__
+[rank0]:     batch = next(self.iterator)
+[rank0]:             ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\utilities\combined_loader.py", line 341, in __next__
+[rank0]:     out = next(self._iterator)
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\pytorch_lightning\utilities\combined_loader.py", line 142, in __next__
+[rank0]:     out = next(self.iterators[0])
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 708, in __next__
+[rank0]:     data = self._next_data()
+[rank0]:            ^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1480, in _next_data
+[rank0]:     return self._process_data(data)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py", line 1505, in _process_data
+[rank0]:     data.reraise()
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_utils.py", line 733, in reraise
+[rank0]:     raise exception
+[rank0]: ValueError: Caught ValueError in DataLoader worker process 1.
+[rank0]: Original Traceback (most recent call last):
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\worker.py", line 349, in _worker_loop
+[rank0]:     data = fetcher.fetch(index)  # type: ignore[possibly-undefined]
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 50, in fetch
+[rank0]:     data = self.dataset.__getitems__(possibly_batched_index)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataset.py", line 420, in __getitems__
+[rank0]:     return [self.dataset[self.indices[idx]] for idx in indices]
+[rank0]:             ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "D:\COMP702\DIFUSCO-main\difusco\co_datasets\tsp_graph_dataset.py", line 41, in __getitem__
+[rank0]:     points, tour = self.get_example(idx)
+[rank0]:                    ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "D:\COMP702\DIFUSCO-main\difusco\co_datasets\tsp_graph_dataset.py", line 31, in get_example
+[rank0]:     points = np.array([[float(points[i]), float(points[i + 1])] for i in range(0, len(points), 2)])
+[rank0]:                         ^^^^^^^^^^^^^^^^
+[rank0]: ValueError: could not convert string to float: ''

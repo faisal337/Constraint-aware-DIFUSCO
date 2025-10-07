@@ -1,0 +1,7 @@
+{"time":"2025-08-13T12:14:37.3866808+01:00","level":"INFO","msg":"main: starting server","port-filename":"C:\\Users\\faiso\\AppData\\Local\\Temp\\tmpg3309rt2\\port-1712.txt","pid":1712,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-08-13T12:14:37.3892762+01:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":1712}
+{"time":"2025-08-13T12:14:37.3892762+01:00","level":"INFO","msg":"server: accepting connections","addr":{"IP":"127.0.0.1","Port":50146,"Zone":""}}
+{"time":"2025-08-13T12:14:37.3897955+01:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"C:\\Users\\faiso\\AppData\\Local\\Temp\\wandb-1712-11572-1696895325\\socket","Net":"unix"}}
+{"time":"2025-08-13T12:14:37.5348972+01:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(127.0.0.1:50147)"}
+{"time":"2025-08-13T12:14:37.5700477+01:00","level":"INFO","msg":"handleInformInit: received","streamId":"wm8ho5fo","id":"1(127.0.0.1:50147)"}
+{"time":"2025-08-13T12:14:37.8896661+01:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"wm8ho5fo","id":"1(127.0.0.1:50147)"}

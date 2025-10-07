@@ -1,0 +1,8 @@
+{"time":"2025-09-25T14:42:51.7726631+01:00","level":"INFO","msg":"main: starting server","port-filename":"C:\\Users\\faiso\\AppData\\Local\\Temp\\tmp2pg7a113\\port-31464.txt","pid":31464,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-09-25T14:42:51.7765753+01:00","level":"INFO","msg":"server: accepting connections","addr":{"IP":"127.0.0.1","Port":53611,"Zone":""}}
+{"time":"2025-09-25T14:42:51.7765753+01:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":31464}
+{"time":"2025-09-25T14:42:51.7765753+01:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"C:\\Users\\faiso\\AppData\\Local\\Temp\\wandb-31464-12196-4089074204\\socket","Net":"unix"}}
+{"time":"2025-09-25T14:42:51.8850584+01:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(127.0.0.1:53612)"}
+{"time":"2025-09-25T14:42:51.9333888+01:00","level":"INFO","msg":"handleInformInit: received","streamId":"r56z606b","id":"1(127.0.0.1:53612)"}
+{"time":"2025-09-25T14:42:52.7398723+01:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"r56z606b","id":"1(127.0.0.1:53612)"}
+{"time":"2025-09-25T14:45:30.5375018+01:00","level":"INFO","msg":"server: parent process exited, terminating service process"}

@@ -1,0 +1,18 @@
+Parameters: 5333505
+C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch_geometric\deprecation.py:26: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  warnings.warn(out)
+C:\Users\faiso\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\data\dataloader.py:624: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 12 (`cpuset` is not taken into account), which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+Training steps: 1173400
+
+  | Name  | Type       | Params | Mode
+---------------------------------------------
+0 | model | GNNEncoder | 5.3 M  | train
+---------------------------------------------
+5.3 M     Trainable params
+0         Non-trainable params
+5.3 M     Total params
+21.334    Total estimated model params size (MB)
+196       Modules in train mode
+0         Modules in eval mode
+Sanity Checking: |                                                                                                   | 0/? [00:00<?, ?it/s]Validation dataset size: 64
