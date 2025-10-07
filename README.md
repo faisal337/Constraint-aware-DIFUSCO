@@ -1,63 +1,44 @@
-<<<<<<< HEAD
-# DIFUSCO: Graph-based Diffusion Solvers for Combinatorial Optimization
+# Constraint-Aware DIFUSCO: Graph-Based Diffusion Models for Combinatorial Optimization
 
-See ["DIFUSCO: Graph-based Diffusion Solvers for Combinatorial Optimization"](https://arxiv.org/abs/2302.08224) for the paper associated with this codebase.
+This repository contains the implementation of **Constraint-Aware DIFUSCO**, an extension of the original [DIFUSCO](https://github.com/sekulicd/difusco) framework for solving **combinatorial optimization problems** such as the **Travelling Salesman Problem (TSP)**.  
+The project introduces **constraint-aware decoding** and **Christofides-guided integration** to improve **solution feasibility** and **constraint satisfaction** in graph-based diffusion solvers.
 
-![Alt text](tsp_illustration.png?raw=true "TSP Illustration of DIFUSCO")
+---
 
-<div align="center">
-    <img src="gaussian_difusco_demo_v2.gif" alt="Gaussian" width="256px">
-  <img src="bernouli_difusco_demo.gif" alt="Bernouli" width="256px">
-</div>
+## Overview
 
-## Setup
+The **Constraint-Aware DIFUSCO** framework combines:
+- **Graph diffusion models** (based on PyTorch Geometric) to denoise graph structures into feasible solutions.
+- **Constraint-aware decoding**, a decoding module that enforces problem-specific constraints (e.g., visiting all nodes exactly once).
+- **Christofides algorithm integration** to bias the diffusion process toward feasible tours or repair invalid ones post-generation.
+
+---
+
+## Key Features
+
+- **Constraint-Aware Decoding**  
+  Enhances solution feasibility by pruning infeasible edges during the diffusion process.  
+
+- **Christofides Integration**  
+  Implemented in two modes:
+  1. **Post-processing repair** — applies Christofides on DIFUSCO outputs to ensure tour validity.
+  2. **Guided decoding** — integrates Christofides during generation to bias sampling toward feasible paths.
+
+- **Data Support**  
+  Trained and evaluated on:
+  - [TSPLIB](http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/)
+
+- **Scalable Training**  
+  Supports large datasets and long training runs (20–50 epochs).  
+  Requires **high computational resources** due to iterative denoising and edge constraint evaluation.
+
+---
+
+## ⚙️ Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-conda env create -f environment.yml
-conda activate difusco
-```
-
-Running TSP experiments requires installing the additional cython package for merging the diffusion heatmap results:
-
-```bash
-cd difusco/utils/cython_merge
-python setup.py build_ext --inplace
-cd -
-```
-
-## Codebase Structure
-
-* `difusco/pl_meta_model.py`: the code for a meta pytorch-lightning model for training and evaluation.
-* `difusco/pl_tsp_model.py`: the code for the TSP problem
-* `difusco/pl_mis_model.py`: the code for the MIS problem
-* `difusco/trian.py`: the handler for training and evaluation
-
-## Data
-
-Please check the `data` folder.
-
-## Reproduction
-
-Please check the [reproducing_scripts](reproducing_scripts.md) for more details.
-
-## Pretrained Checkpoints
-
-Please download the pretrained model checkpoints from [here](https://drive.google.com/drive/folders/1IjaWtkqTAs7lwtFZ24lTRspE0h1N6sBH?usp=sharing).
-
-## Reference
-
-If you found this codebase useful, please consider citing the paper:
-
-```
-@inproceedings{
-    sun2023difusco,
-    title={{DIFUSCO}: Graph-based Diffusion Solvers for Combinatorial Optimization},
-    author={Zhiqing Sun and Yiming Yang},
-    booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
-    year={2023},
-    url={https://openreview.net/forum?id=JV8Ff0lgVV}
-}
-```
-=======
-# Constraint-aware-DIFUSCO
->>>>>>> 929cce64bf2b315b4b7af370dbeca10a4a840d1e
+git clone https://github.com/<your-username>/constraint-aware-difusco.git
+cd constraint-aware-difusco
+pip install -r requirements.txt
